@@ -1,0 +1,24 @@
+MFC（Microsoft Foundation Class）类库
+API（Application Programming Interface）：（应用程序 编程 接口）
+是由操作系统提供，面向操作系统的开发接口，只限于本操作系统使用；
+C/C++库函数，不区分任何操作系统，只要是有C/C++编译器即可。
+
+1、DOS：同一时间内只能运行1个执行程序；
+windows：是一种基于图形界面的多任务操作系统，它使用图形界面操作代替了早期的以命令为基础的文本输入型操作系统。
+2、对比控制台软件：
+a)主函数名称和参数不同：控制台程序用main函数、windows程序用WinMian。
+b)windows程序是以窗口为基础的软件程序，比控制台程序多了显示状态等特征。
+c)控制台窗口必须是在黑底白字的这种控制台内运行；
+而windows程序运行起来可以有窗口，也可以没有窗口；
+（除了在任务管理器中你能看到进程在运行之外，没有任何显示迹象）；
+d)windows程序开发主要基于API函数（应用程序接口：只限于本操作系统使用）
+e)每一个windows API都来自于一个DLL动态库，必须要连接到一个xxx.lib库；
+f)控制台程序与windows程序转化；
+User32.dll keneral32.dll GDI32.dll
+
+3、MessageBox简介：
+HWND hWnd参数：父窗口或者叫所有者
+LPCSTR lpszText和lpszCaption参数：要输出的标题和文字
+UINT nType参数：低4位（0-15）管理按钮个数，高四位管理图标
+
+
